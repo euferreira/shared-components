@@ -1,7 +1,18 @@
 {
-  "name": "shared-components",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@euferreira/shared-components",
+  "version": "0.0.13",
+  "author": {
+    "email": "fernandferreira@hotmail.com",
+    "name": "Fernando Ferreira"
+  },
+  "description": "Shared components for my projects",
+  "keywords": [
+    "react",
+    "nextjs",
+    "mui",
+    "material-ui",
+    "components"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -12,7 +23,15 @@
     "eslint": "8.49.0",
     "eslint-config-next": "13.5.1",
     "next": "13.5.1",
+    "next-transpile-modules": "^10.0.1",
+    "normalize.css": "^8.0.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.11.0",
+    "webpack": "^5.88.2"
+  },
+  "devDependencies": {
+    "sass": "^1.68.0",
+    "typescript-plugin-css-modules": "^5.0.1"
   }
 }
