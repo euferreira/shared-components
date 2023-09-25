@@ -1,10 +1,17 @@
 {
   "name": "@euferreira/shared-components",
-  "version": "0.0.13",
+  "version": "1.0.0",
   "author": {
-    "email": "fernandferreira@hotmail.com",
     "name": "Fernando Ferreira"
   },
+  "maintainers": [
+    {
+      "name": "Victor Machado"
+    },
+    {
+      "name": "Igor Sarmento"
+    }
+  ],
   "description": "Shared components for my projects",
   "keywords": [
     "react",
@@ -31,6 +38,8 @@
     "webpack": "^5.88.2"
   },
   "devDependencies": {
-    "sass": "^1.68.0"
+    "sass": "^1.68.0",
+    "styled-components": "^6.0.8",
+    "typescript-plugin-css-modules": "^5.0.1"
   }
 }

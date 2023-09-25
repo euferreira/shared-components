@@ -1,5 +1,5 @@
 import React from "react";
-//import "./styles/Appbar.scss";
+import StyledList from "./styles/appbar";
 
 export function SharedAppbar({ title }) {
   const listMenu = [
@@ -22,7 +22,16 @@ export function SharedAppbar({ title }) {
 
   return (
     <div>
-      <span className="title__appbar">{title ?? "Appbar"}</span>
+      <span
+        style={{
+          fontSize: "1.5rem",
+          fontWeight: "bold",
+          color: "blue",
+          marginRight: "1rem",
+        }}
+      >
+        {title ?? "Appbar"}
+      </span>
       <div>
         <ul>
           {listMenu.map((item, index) => (
@@ -34,7 +43,7 @@ export function SharedAppbar({ title }) {
                 console.log("Clicked", item.name);
               }}
             >
-              <li>{item.name}</li>
+              <StyledList>{item.name}</StyledList>
             </a>
           ))}
         </ul>
