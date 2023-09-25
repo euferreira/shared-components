@@ -1,7 +1,7 @@
 import React from "react";
-import style from "./Appbar.module.scss";
+//import "./styles/Appbar.scss";
 
-export function SharedAppbar() {
+export function SharedAppbar({ title }) {
   const listMenu = [
     {
       id: 1,
@@ -21,21 +21,28 @@ export function SharedAppbar() {
   ];
 
   return (
-    <>
-      <div className={style.container_appbar}>
-        <span>
-          AppBar
-        </span>
-        <div className={style.list_menu}>
-          <ul>
-            {listMenu.map((item) => (
-              <a href={item.href}>
-                <li key={item.id}>{item.name}</li>
-              </a>
-            ))}
-          </ul>
-        </div>
+    <div>
+      <span className="title__appbar">{title ?? "Appbar"}</span>
+      <div>
+        <ul>
+          {listMenu.map((item, index) => (
+            <a
+              key={index}
+              href={item.href}
+              onClick={(e) => {
+                e.preventDefault();
+                console.log("Clicked", item.name);
+              }}
+            >
+              <li>{item.name}</li>
+            </a>
+          ))}
+        </ul>
       </div>
-    </>
+    </div>
   );
+}
+
+export function TestAppbar() {
+  return <h1>This is a shared appbar component.</h1>;
 }
