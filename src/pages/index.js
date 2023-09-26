@@ -1,10 +1,10 @@
 import React from "react";
-import { SharedAppbar } from "./appbar";
+import Appbar from "./appbar";
 
 export default function Home() {
     return (
         <>
-            <SharedAppbar />
+            <Appbar />
         </>
     )
 }

@@ -1,7 +1,7 @@
 import React from "react";
-import { Container, List, ListElement, ListLink, Title } from "./styles/appbar";
+import { Container, List, ListElement, ListLink, Title } from "../styles/appbar";
 
-export function SharedAppbar({ title }) {
+export default function Appbar({ title }) {
   const listMenu = [
     {
       id: 1,
@@ -47,6 +47,6 @@ export function SharedAppbar({ title }) {
   );
 }
 
-export function TestAppbar() {
-  return <h1>This is a shared appbar component.</h1>;
-}
+// export function TestAppbar() {
+//   return <h1>This is a shared appbar component.</h1>;
+// }
