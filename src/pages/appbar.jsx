@@ -1,5 +1,5 @@
 import React from "react";
-import StyledList from "./styles/appbar";
+import { Container, List, ListElement, ListLink, Title } from "./styles/appbar";
 
 export function SharedAppbar({ title }) {
   const listMenu = [
@@ -20,35 +20,30 @@ export function SharedAppbar({ title }) {
     },
   ];
 
+  const [isOpen, setIsOpen] = React.useState(false);
+
   return (
-    <div>
-      <span
-        style={{
-          fontSize: "1.5rem",
-          fontWeight: "bold",
-          color: "blue",
-          marginRight: "1rem",
-        }}
-      >
-        {title ?? "Appbar"}
-      </span>
-      <div>
-        <ul>
-          {listMenu.map((item, index) => (
-            <a
-              key={index}
-              href={item.href}
-              onClick={(e) => {
-                e.preventDefault();
-                console.log("Clicked", item.name);
-              }}
-            >
-              <StyledList>{item.name}</StyledList>
-            </a>
-          ))}
-        </ul>
-      </div>
-    </div>
+    <>
+      <Container>
+        <Title>{title ?? "Appbar"}</Title>
+        <div>
+          <List>
+            {listMenu.map((item, index) => (
+              <ListLink
+                key={index}
+                href={item.href}
+                onClick={(e) => {
+                  e.preventDefault();
+                  console.log("Clicked", item.name);
+                }}
+              >
+                <ListElement>{item.name}</ListElement>
+              </ListLink>
+            ))}
+          </List>
+        </div>
+      </Container>
+    </>
   );
 }
 
