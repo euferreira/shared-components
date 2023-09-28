@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Container = styled.div`
+const Container = styled.nav`
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -27,7 +27,7 @@ const List = styled.ul`
   margin: 0;
 `;
 
-const ListLink = styled.a`
+const ListLink = styled.span`
   text-decoration: none;
   color: #000;
   padding: 0 1rem;

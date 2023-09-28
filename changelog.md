@@ -1,3 +1,6 @@
+# v1.0.2
+- Funfando \o.o/
+
 # v0.0.13
 - Tá quebrada...
 
