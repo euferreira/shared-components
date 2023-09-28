@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import React from "react";
 import Layout from './components/layout';
-import Appbar from './appbar';
 
 export default function Home() {
     return (
