@@ -5,7 +5,7 @@ import {
   ListLink,
   Title,
 } from "../styles/appbar";
-import { Link, useNavigate } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 export default function Appbar({ title }) {
   const listMenu = [
@@ -26,7 +26,7 @@ export default function Appbar({ title }) {
     },
   ];
 
-  const navigate = useNavigate();
+  const navigate = () => {};
 
   return (
     <>
@@ -36,12 +36,13 @@ export default function Appbar({ title }) {
           <List>
             {listMenu.map((item, index) => (
               <li key={index}>
-                <Link to={item.href} onClick={() => {
+                <span>{item.name}</span>
+                {/* <Link to={item.href} onClick={() => {
                   console.log("navigate to: ", item.href);
                   navigate(item.href);
                 }}>
                   <ListLink>{item.name}</ListLink>
-                </Link>
+                </Link> */}
               </li>
             ))}
           </List>
