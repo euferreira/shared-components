@@ -20,12 +20,12 @@ function Lista() {
     {
       id: 1,
       name: "Menu 1",
-      href: "#",
+      href: "/cronogramas/etapa1",
     },
     {
       id: 2,
       name: "Menu 2",
-      href: "#",
+      href: "/cronogramas/etapa2",
     },
     {
       id: 3,
