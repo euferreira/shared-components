@@ -35,7 +35,7 @@ export default function Etapa2() {
                 </thead>
                 <tbody>
                     {loading ? <tr><td colSpan={2}>Carregando...</td></tr> : listaUsers.map((item) => (
-                        <tr>
+                        <tr key={item.id}>
                             <td>{item.id}</td>
                             <td>{item.name}</td>
                         </tr>

@@ -21,8 +21,7 @@ export default function App({ Component, pageProps }) {
           {typeof window === 'undefined' ? 'server' : 'client'}
         </span>
         <hr />
-        {/* <Component {...pageProps} /> */}
-        {typeof windows === 'undefined' ? <Component {...pageProps} /> : null }
+        <Component {...pageProps} /> 
       </div>
     </>
   );
